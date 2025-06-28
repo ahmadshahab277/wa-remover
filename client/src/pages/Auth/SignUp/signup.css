@@ -1,0 +1,28 @@
+.left-signup {
+  background-color: #526cca;
+  width: 50%;
+  height: inherit;
+
+  /* Only top-left and bottom-left corners rounded */
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+
+
+.reg-btn {
+  border: 2px solid #fff;
+  width: 160px;
+  height: 46px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.reg-btn:hover {
+  background-color: #fff;
+  color: #526cca;
+}

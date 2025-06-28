@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/fonts/Poppins.ttf)}
+
+*{
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+/* Universal Variab */
+
+:root {
+    --primary-color: #18181b;
+    --secondary-color: #6366f1;
+    --accent-color: #06d6a0;
+    --background-color: #23272f;
+    --surface-color: #262a34;
+    --text-color: #0b2964;
+    --muted-text: #a1a1aa;
+    --button-bg: #06d6a0;
+    --button-hover: #00b383;
+    --navbar-bg: #18181b;
+    --card-bg: #23272f;
+    --input-bg: #18181b;
+    --input-border: #6366f1;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', 'Poppins', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', 'Poppins', 'Segoe UI', Arial, sans-serif;
+    color: var(--text-color);
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+h6{
+    font-size: 0.9rem;
+}
+
+p {
+    color: var(--muted-text);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+button {
+    background: var(--button-bg);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: var(--button-hover);
+}
+
+input, textarea, select {
+    background: var(--input-bg);
+    color: var(--text-color);
+    border: 1.5px solid var(--input-border);
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 2em;
+    margin: 1em 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: var(--surface-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 8px;
+}

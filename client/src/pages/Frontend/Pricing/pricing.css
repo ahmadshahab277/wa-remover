@@ -1,0 +1,211 @@
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Animation Delays */
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+.animation-delay-700 {
+  animation-delay: 700ms;
+}
+
+.animation-delay-900 {
+  animation-delay: 900ms;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+/* Pulse Animation for CTAs */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(37, 99, 235, 0);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+/* Pricing Card Hover Animation */
+.pricing-card {
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 8px 10px -6px rgba(59, 130, 246, 0.1);
+}
+
+/* Popular Plan Animation */
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+  }
+}
+
+.popular-plan {
+  animation: glow 3s infinite;
+  position: relative;
+  z-index: 10;
+  transform: scale(1.05);
+}
+
+/* Popular Badge Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.popular-badge {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+/* Feature Card Animation */
+.feature-card {
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1), 0 4px 6px -2px rgba(59, 130, 246, 0.05);
+}
+
+.feature-card:hover .w-12 {
+  background-color: rgba(59, 130, 246, 0.2);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* FAQ Animation */
+.faq-item details {
+  transition: all 0.3s ease;
+}
+
+.faq-item details[open] {
+  background-color: rgba(239, 246, 255, 0.5);
+}
+
+.faq-item details[open] summary {
+  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+  margin-bottom: 1rem;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-item details[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* Testimonial Card Animation */
+.testimonial-card {
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1), 0 4px 6px -2px rgba(59, 130, 246, 0.05);
+}
+
+/* Star Rating Animation */
+@keyframes starPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.testimonial-card:hover svg {
+  animation: starPulse 1s ease infinite;
+  animation-delay: calc(var(--star-index) * 0.1s);
+}
+
+.testimonial-card svg:nth-child(1) {
+  --star-index: 1;
+}
+
+.testimonial-card svg:nth-child(2) {
+  --star-index: 2;
+}
+
+.testimonial-card svg:nth-child(3) {
+  --star-index: 3;
+}
+
+.testimonial-card svg:nth-child(4) {
+  --star-index: 4;
+}
+
+.testimonial-card svg:nth-child(5) {
+  --star-index: 5;
+}
+
+/* CTA Section Animation */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.cta-section {
+  background-size: 200% 200%;
+  animation: gradientFlow 5s ease infinite;
+}
+
+/* Toggle Switch Animation */
+@keyframes togglePulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(59, 130, 246, 0);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  }
+}
+
+button[role="switch"] {
+  animation: togglePulse 2s infinite;
+}
